@@ -1,0 +1,14 @@
+
+if SHIELD_SPLIT_HHKB_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "split_hhkb"
+
+endif
+
+if SHIELD_SPLIT_HHKB_LEFT || SHIELD_SPLIT_HHKB_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
